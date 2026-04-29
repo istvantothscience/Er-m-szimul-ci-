@@ -1,0 +1,6 @@
+{
+  "name": "Váltakozó Áram Szimulátor",
+  "description": "Interaktív szimuláció a váltakozó áram előállításáról, az elektromágneses indukcióról és a transzformátorok működéséről középiskolás fizikaórához.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
