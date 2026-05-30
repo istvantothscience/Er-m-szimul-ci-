@@ -14,7 +14,7 @@ export default function App() {
       <header className="bg-blue-600 text-white p-4 shadow-md z-10 flex justify-between items-center">
         <h1 className="text-2xl font-bold tracking-tight">Váltakozó Áram Szimulátor</h1>
         <div className="flex items-center gap-4 text-blue-100">
-          <span className="text-sm">9. osztályos fizika</span>
+          <span className="text-sm">8. osztályos fizika</span>
           <HelpCircle className="w-5 h-5 cursor-pointer hover:text-white transition-colors" />
         </div>
       </header>
@@ -40,7 +40,7 @@ export default function App() {
         </section>
 
         {/* Right Side: Details Panel */}
-        <aside className="w-full xl:w-[450px] shrink-0 bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col h-auto xl:max-h-[calc(100vh-120px)]">
+        <aside className="w-full xl:w-[450px] shrink-0 bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col">
            <DetailsPanel data={simulationData[selectedPart]} />
         </aside>
 

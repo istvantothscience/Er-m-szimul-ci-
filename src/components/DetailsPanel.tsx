@@ -29,7 +29,7 @@ export default function DetailsPanel({ data }: DetailsPanelProps) {
   const animComponent = renderAnimation();
 
   return (
-    <div className="h-full flex flex-col bg-white rounded-xl">
+    <div className="flex flex-col bg-white rounded-xl">
       <AnimatePresence mode="wait">
         <motion.div
           key={data.id}
@@ -37,7 +37,7 @@ export default function DetailsPanel({ data }: DetailsPanelProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.3 }}
-          className="flex flex-col h-full"
+          className="flex flex-col"
         >
           {/* Header */}
           <div className="p-5 border-b border-slate-200 bg-slate-50 rounded-t-xl shrink-0">
@@ -52,8 +52,8 @@ export default function DetailsPanel({ data }: DetailsPanelProps) {
             </div>
           )}
 
-          {/* Scrollable Content */}
-          <div className="flex-1 overflow-y-auto p-5 space-y-6">
+          {/* Detailed Content */}
+          <div className="p-5 space-y-6">
              {/* Detailed Explanation */}
              <div className="space-y-3">
                {data.detailedText.map((paragraph, idx) => (
